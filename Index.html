@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Photo Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    #contact {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Photo Collection</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="gallery">
+    <!-- Replace the src values with your actual image URLs or paths -->
+    <img src="photo1.jpg" alt="Photo 1">
+    <img src="photo2.jpg" alt="Photo 2">
+    <img src="photo3.jpg" alt="Photo 3">
+    <img src="photo4.jpg" alt="Photo 4">
+    <!-- Add more <img> tags as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 My Photo Collection
+  </footer>
+
+</body>
+</html>
